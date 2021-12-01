@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You have been hacked...</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: black;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        h1{
+            color: white;
+            margin: 20px;
+        }
+
+        h2{
+            color: white;
+            margin: 20px;
+        }
+
+        #unhack{
+            font-size: 30px;
+        }
+
+        #output{
+            font-family: monospace;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        You have been hacked by
+    </h1>
+    <h2>
+        G_4rce
+    </h2>
+
+    <input type="button" value="Click to un-hack!" id = "unhack" onclick="clicked()">
+
+    <div id="lie">
+        <h2 id="output"></h2>
+    </div>
+
+    <script>
+            function clicked(){
+                document.getElementById("output").innerHTML = "Sike I lied!";
+        }
+    </script>
+</body>
+</html>
